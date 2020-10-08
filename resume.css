@@ -1,0 +1,441 @@
+body{
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+.boss__div{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: mandatory;
+}
+header .container{
+    background-image: url(https://images.pexels.com/photos/2343475/pexels-photo-2343475.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1500) ;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 60vh;
+    background-position: center;
+    opacity: 1;
+    background-size: cover;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+}
+.links ul{
+    display: flex;
+    justify-content: center;
+}
+ul li {
+    margin-right: 30px;
+    list-style: none;
+    margin-top: -10px;
+}
+ul li a{
+    position: relative;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: large;
+   
+}
+ul li a::after{
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    content: '';
+    left: 0;
+    bottom: -5px;
+    transition: all .3s linear;
+}
+ul li a:hover::after{
+   width: 100%;
+   background-color: rgb(255, 255, 255);
+   opacity: 1;
+}
+.header__content{
+    display: grid;
+    justify-content: center;
+    margin-top: 180px;
+    color: white;
+}
+.header__content h2{
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-size: 4rem;
+}
+.header__icons{
+    margin-left: 20px;
+    /* margin-top: 40px; */
+
+}
+.header__icons i{
+    margin-right: 18px;
+    font-size: 17px;
+}
+.header__icons a{
+    color: white;
+}
+.header__icons i:hover{
+   transform: scale(1.3);
+   transition: all .9s;
+   cursor: pointer;
+}
+
+.header__image img{
+    margin-top: 58px;
+    position: absolute;
+    height: 100px;
+    border-radius: 45%;
+    margin-left: 47%;
+   
+}
+.header__image img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: all .8s;
+}
+.main__content{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+.main__content p{
+    max-width: 1000px;
+    line-height: 1.5;
+    color: grey;
+}
+span{
+    color: blue;
+}
+
+
+.top__parent{
+    margin-top: 100px;
+    position: relative;
+    height: 350px;
+    background-color: rgb(245, 245, 245);
+}
+
+.bars {
+    position: relative;
+    display: grid;
+    width: 15vw;
+    margin-left: 130px;
+    text-align: start;
+}
+.bars h1{
+    position: relative;
+    display: inline;
+    margin: 10px auto;
+    font-size: 29px;
+    color: blue;
+    border-bottom: 2px solid blue;
+}
+
+.bars .skills {
+    display: flex;
+  	margin-top: 56px;
+    list-style: none;
+}
+
+.bars li {
+   position: relative;
+  	margin-bottom: 60px;
+  	background: #ccc;
+  	height: 30px;
+    border-radius: 9px;
+    width: 17vw;
+}
+.bars li:hover{
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+    transition: .3s ;
+    cursor: pointer;
+}
+.bars li em {
+    display: flex;
+    justify-content: center;
+	font: 15px 'opensans-bold', sans-serif;
+    color: #fdfdfd;
+	text-transform: uppercase;
+    letter-spacing: 2px;
+	font-weight: normal;
+    position: relative;
+	top: 5px;
+}
+.bar-expand {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding-right: 24px;
+    background: #313131;
+    height: 30px;
+
+}
+.python {
+  	width: 70%;
+}
+.css {
+      width: 63%;
+      background-color: red;
+}
+.html5 {
+      width: 80%;
+      background-color: lightblue;
+}
+.javascript {
+      width: 50%;
+      background-color: rgb(42, 192, 159);
+} 
+.php{
+    width: 54%;
+    background-color: cadetblue;
+}
+.mongodb{
+    width: 69%;
+    background-color: darkblue;
+}
+.other{
+    display: flex;
+    justify-content: space-evenly;
+}
+.portfolio{
+    position: relative;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+}
+.portfolio h1{
+    position: relative;
+    display: inline;
+    margin: 20px auto;
+    font-size: 29px;
+    margin-bottom: 70px;
+    color: blue;
+    border-bottom: 2px solid blue;
+}
+.portfolio__images {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+}
+.portfolio__images img{
+    height: 320px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+    position: relative;
+}
+
+.portfolio__images img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: .7s;
+}
+.images__2 {
+    flex-wrap: wrap;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.images__2 img{
+    height: 320px;
+    object-fit: contain;
+   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+}
+.images__2 img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: .7s;
+}
+#education{
+    background-color: rgb(245, 245, 245);
+}
+.education{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.education h1{
+    color: blue;
+    border-bottom: 2px solid blue;
+}
+.education__inner__top{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left:300px;
+}
+.education__inner__top h2{
+    color: blue;
+}
+.education__inner__top h4{
+    color: orange;
+}
+.education__inner__top p{
+    color: grey;
+}
+.education__inner__top h4,h2{
+    margin-bottom: -10px;
+}
+.education__inner__bottom{
+    display: flex;
+    margin-left: 60px;
+    /* justify-content: center; */
+}
+.education__inner__bottom p{
+    max-width: 500px;
+    margin-right: 120px;
+}
+.education__inner__bottom p{
+    color: grey;
+}
+.second__top{
+    display: flex;
+    align-items: flex-end;
+    margin-right: 200px;
+}
+.second__bottom {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 100px;
+}
+.education__inner__top i{
+    color: orange;
+    position: absolute;
+    left: -180px;
+    top: 25px;
+    font-size: 23px;
+}
+#second__arrow{
+   position: relative;
+   right: 0;
+   top: 45px;
+   left: -250px;
+}
+.experience{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.experience h1{
+    font-size: 27px;
+    color: blue;
+    border-bottom: 2px solid blue;
+}
+#contact{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    height: 600px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+.contact {
+    display: inline;
+}
+.contact h1{
+    color: white;
+    font-size: 28px;
+    border-bottom: 2px solid white;
+    
+}
+.main__parent__form{
+    margin-top: 140px;
+}
+.main__parent__form input{
+    margin-left: 100px;
+    margin-bottom: 40px;
+    height: 20px;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid white;
+    width:400px;
+    outline: none;
+    color: white;
+}
+.form__right{
+    display: flex;
+    flex-direction: column;
+}
+.form__left button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 130px;
+    margin-left: 100px;
+    border-radius: 10px;
+}
+.form__left button:hover{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    transition: all .8s ;
+    cursor: pointer;
+}
+.form__right{
+    margin-top: 110px;
+    margin-right: 150px;
+}
+.form__right h1,p{
+    color: white;
+}
+.form__right p{
+    max-width: 400px;
+    font-size: 14px;
+}
+.add{
+    display: flex;
+    align-items: center;
+}
+.phone{
+    display: flex;
+    align-items: center;
+}
+.mail{
+    display: flex;
+    align-items: center;
+}
+.add i{
+    color: white;
+    margin-right: 20px;
+}
+.phone i{
+    color: white;
+    margin-right: 20px;
+}
+.mail i{
+    color: white;
+    margin-right: 20px;
+}
+.touch{
+    display: flex;
+    align-items: center;
+}
+.touch i{
+    color: white;
+    margin-right: 20px;
+}
+.diff{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+#con{
+ 
+  font-size: 29px;
+  color: blue;
+  border-bottom: 2px solid blue;
+}
+.contact__icons{
+    display: flex;
+    justify-content: center;
+}
+.contact__icons i{
+    margin-right: 20px;
+}
